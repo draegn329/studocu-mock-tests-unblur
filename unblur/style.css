@@ -1,0 +1,23 @@
+/* 1. Remove the blur from the content container */
+._blurred-content_tltpv_9 {
+    filter: none !important;
+    backdrop-filter: none !important;
+}
+
+/* 2. Remove the dark/semi-transparent overlay that blocks the view */
+._overlay_tltpv_16 {
+    display: none !important;
+}
+
+/* 3. Ensure the text inside is visible and sharp */
+._blurred-content_tltpv_9 * {
+    filter: none !important;
+    opacity: 1 !important;
+    user-select: text !important;
+}
+
+/* 4. Fix the container height if it's being collapsed by the site */
+._container_tltpv_1 {
+    height: auto !important;
+    min-height: 100px !important;
+}

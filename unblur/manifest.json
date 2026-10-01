@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "StudocuAI Unblur",
+  "version": "1.0",
+  "description": "Removes blur filters from detailed answers and explanations.",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "action": {
+    "default_title": "Unblur Content"
+  }
+}
